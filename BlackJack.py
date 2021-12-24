@@ -17,7 +17,7 @@ class BlackJack:
 
         if self.score == 21:
             self.game_over = True
-            self.result = "Black Jack!"
+            self.result = ["Black Jack!", True]
 
     def hit(self):
         card = self.deck.get_card()
@@ -37,7 +37,7 @@ class BlackJack:
 
     def fold(self):
         self.game_over = True
-        self.has_folded = True
+        self.result = ["You folded!", False]
 
     def stand(self):
         self.dealer_play()
