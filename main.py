@@ -7,7 +7,7 @@ while money > 0:
 
     bet = money+1
 
-    while not (bet < money):
+    while not (bet <= money):
         while not (bet := input("How much would you like to bet?\n\t")).isnumeric():
             pass
         bet = int(bet)
